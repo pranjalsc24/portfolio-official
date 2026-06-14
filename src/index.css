@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-padding-top: 100px;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: #0b0a14;
+  color: #ece9ff;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+* { -webkit-tap-highlight-color: transparent; }
+
+@media (pointer: fine) {
+  * { cursor: none !important; }
+}
+
+.bg-grid {
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(108,92,255,0.10), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(255,184,107,0.06), transparent 45%);
+  background-color: rgba(11,10,20,0.55);
+}
+
+.section {
+  @apply max-w-7xl mx-auto px-5 md:px-10 py-20 md:py-32 relative;
+}
+
+.glass {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+}
+
+.btn {
+  @apply inline-flex items-center gap-2 px-5 py-3 rounded-full font-medium transition-transform;
+  background: linear-gradient(135deg, #6c5cff 0%, #a78bff 100%);
+  box-shadow: 0 10px 40px -10px rgba(108,92,255,0.7);
+}
+.btn:hover { transform: translateY(-2px); }
+
+.headline {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+.tag {
+  @apply px-3 py-1 text-xs rounded-full font-mono;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #cfc7ff;
+}
+
+.zigzag {
+  width: 80px;
+  height: 30px;
+  background: none;
+}
+
+@keyframes marquee-x {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.marquee {
+  animation: marquee-x 40s linear infinite;
+  width: max-content;
+}
+.marquee:hover {
+  animation-play-state: paused;
+}

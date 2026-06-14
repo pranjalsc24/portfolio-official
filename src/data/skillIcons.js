@@ -1,0 +1,41 @@
+import {
+  SiPython, SiJavascript, SiDjango, SiFastapi, SiSpringboot, SiNodedotjs,
+  SiPostgresql, SiMongodb, SiMysql, SiSqlite, SiRedis,
+  SiCelery, SiApachekafka, SiApachenifi,
+  SiSocketdotio, SiDocker, SiGit, SiPostman, SiJira,
+} from 'react-icons/si'
+import { FaJava, FaAws } from 'react-icons/fa'
+import { TbApi, TbWebhook, TbTestPipe, TbCookie } from 'react-icons/tb'
+
+export const skillIcons = {
+  'Python':           { icon: SiPython,        color: '#ffd24a' },
+  'Java':             { icon: FaJava,          color: '#e76f00' },
+  'JavaScript':       { icon: SiJavascript,    color: '#f7df1e' },
+  'Django':           { icon: SiDjango,        color: '#0bb678' },
+  'DRF':              { icon: SiDjango,        color: '#a01c20' },
+  'Django Channels':  { icon: TbWebhook,       color: '#0bb678' },
+  'FastAPI':          { icon: SiFastapi,       color: '#009688' },
+  'Spring Boot':      { icon: SiSpringboot,    color: '#6db33f' },
+  'Node.js':          { icon: SiNodedotjs,     color: '#5fa04e' },
+  'Vert.x':           { icon: TbApi,           color: '#8c6cff' },
+  'PostgreSQL':       { icon: SiPostgresql,    color: '#4169e1' },
+  'MongoDB':          { icon: SiMongodb,       color: '#47a248' },
+  'MySQL':            { icon: SiMysql,         color: '#4479a1' },
+  'SQLite':           { icon: SiSqlite,        color: '#5fb8e6' },
+  'Redis':            { icon: SiRedis,         color: '#ff4438' },
+  'Redis Pub/Sub':    { icon: SiRedis,         color: '#ff4438' },
+  'Celery':           { icon: SiCelery,        color: '#a9cc54' },
+  'Kafka':            { icon: SiApachekafka,   color: '#cfcfcf' },
+  'Apache NiFi':      { icon: SiApachenifi,    color: '#728e9b' },
+  'WebSockets':       { icon: SiSocketdotio,   color: '#a78bff' },
+  'REST':             { icon: TbApi,           color: '#ffb86b' },
+  'REST APIs':        { icon: TbApi,           color: '#ffb86b' },
+  'API Gateway':      { icon: TbApi,           color: '#6c5cff' },
+  'Docker':           { icon: SiDocker,        color: '#2496ed' },
+  'Git':              { icon: SiGit,           color: '#f05032' },
+  'AWS':              { icon: FaAws,           color: '#ff9900' },
+  'Postman':          { icon: SiPostman,       color: '#ff6c37' },
+  'JIRA':             { icon: SiJira,          color: '#0052cc' },
+  'TDD':              { icon: TbTestPipe,      color: '#ffb86b' },
+  'Cookies Auth':     { icon: TbCookie,        color: '#ffb86b' },
+}
